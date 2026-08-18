@@ -1,0 +1,13 @@
+** HashMap contains only one null key, if we add more than one values with null key
+   then last added value get saved.
+** 
+
+
+
+
+
+
+
+
+ ** useful methods
+ 	1- map.put(c, map.getOrDefault(c, 0) + 1);

@@ -1,0 +1,9 @@
+1- An abstract method can only set a visibility modifier of public or protected. 
+   That is, an abstract method cannot add static or final modifier to the declaration. 
+
+2-When Should I use an Abstract class ???
+Answer :We should go for abstract class when we are working with classes that contains similar code. 
+That is, there is a possibility to template behavior and attributes. Common behavior can be elevated 
+to a super class and provide implementation to it. Then add behavior that cannot be implemented and 
+declare it as abstract. Classes that are similar to this abstract class will extend it and use the 
+already implemented methods and add implementation for abstract methods.

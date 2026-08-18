@@ -1,0 +1,18 @@
+Java Regex classes are present in java.util.regex package 
+
+This contains three classes:
+
+1- Pattern: 
+	Pattern object is the compiled version of the regular expression. 
+	Pattern class doesn’t have any public constructor and 
+	we use it’s public static method compile to create the pattern object by passing regular expression argument.
+
+2- Matcher: 
+	Matcher is the java regex engine object that matches the input String pattern 
+	with the pattern object created. Matcher class doesn’t have any public constructor and 
+	we get a Matcher object using pattern object matcher method that takes the input String 
+	as argument. We then use matches method that returns boolean result based on input 
+	String matches the regex pattern or not.
+
+3- PatternSyntaxException: 
+	PatternSyntaxException is thrown if the regular expression syntax is not correct.

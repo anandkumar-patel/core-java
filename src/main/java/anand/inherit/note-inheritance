@@ -1,0 +1,4 @@
+** If superclass does not have default constructor/zero param constructor, 
+	then subclass also needs to have an explicit constructor defined. 
+	Else it will throw compile time exception. In the subclass constructor, 
+	call to superclass constructor is mandatory.
