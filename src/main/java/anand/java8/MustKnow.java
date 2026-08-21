@@ -16,7 +16,9 @@ public class MustKnow {
 
 		System.out.println("converting a int array to Integer List");
 		int[] arr = { 11, 12, 13, 14, 15 };
-		List<Integer> list = IntStream.of(arr).boxed().collect(Collectors.toCollection(ArrayList::new));
+		//List<Integer> list = IntStream.of(arr).boxed().collect(Collectors.toCollection(ArrayList::new));
+		// other way
+		List<Integer> list = Arrays.stream(arr).boxed().collect(Collectors.toCollection(ArrayList::new));
 		System.out.println(list.size());
 
 		System.out.println("converting string array to comma separated string");

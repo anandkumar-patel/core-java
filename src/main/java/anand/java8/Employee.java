@@ -1,5 +1,7 @@
 package anand.java8;
 
+import java.util.List;
+
 public class Employee {
 	private int id;
 	private String name;
@@ -9,12 +11,13 @@ public class Employee {
 	private boolean isActive;
 	private int yearOfJoining;
 	private double salary;
+	private List<Project> projects;
 
 	public Employee() {
 		super();
 	}
 
-	public Employee(int id, String name, int age, String gender, String department,boolean isActive, int yearOfJoining, double salary) {
+	public Employee(int id, String name, int age, String gender, String department,boolean isActive, int yearOfJoining, double salary, List<Project> projects) {
 		super();
 		this.id = id;
 		this.name = name;
@@ -24,6 +27,7 @@ public class Employee {
 		this.isActive = isActive;
 		this.yearOfJoining = yearOfJoining;
 		this.salary = salary;
+		this.projects = projects;
 	}
 
 	public int getId() {
@@ -85,13 +89,20 @@ public class Employee {
 	public void setSalary(double salary) {
 		this.salary = salary;
 	}
-	
+
+	public List<Project> getProjects() {
+		return projects;
+	}
+
+	public void setProjects(List<Project> projects) {
+		this.projects = projects;
+	}
 
 	@Override
 	public String toString() {
 		return "Employee [id=" + id + ", name=" + name + ", age=" + age + ", gender=" + gender + ", department="
 				+ department + ", isActive=" + isActive + ", yearOfJoining=" + yearOfJoining + ", salary=" + salary
-				+ "]";
+				+ ", projects=" + projects + "]";
 	}
 
 }
