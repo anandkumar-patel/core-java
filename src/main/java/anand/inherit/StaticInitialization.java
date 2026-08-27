@@ -34,5 +34,5 @@ public class StaticInitialization {
  * First static block get executed then class variable get instantiated i.e.
  * new Test1(10); 
  * After these Constructor of StaticInitialization (parameterized) is get
- * execute, in this constructor Test1 is get instantiated.
+ * executed, in this constructor Test1 is get instantiated.
  */

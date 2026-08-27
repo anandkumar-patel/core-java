@@ -15,7 +15,7 @@ public class StringSortAscending {
     }
 
     public static void main(String[] args) {
-        String str = "bac";
+        String str = "backword policy";
         System.out.println(sortAsc(str));
     }
 }

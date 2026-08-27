@@ -1,28 +1,6 @@
-package anand.inherit;
+package anand.inherit.references;
 
-class BaseClass {
-	
-	public void func() {
-		System.out.println("In Base Class func method !!");
-	};
-
-	public void func1() {
-		System.out.println("In Base Class func1 method !!");
-	};
-}
-
-class DerivedClass extends BaseClass {
-	@Override
-	public void func() {
-		System.out.println("In Derived Class func method");
-	}
-
-	public void func2() { // How to access this by Base class reference
-		System.out.println("In Derived Class func2 method");
-	}
-}
-
-public class InheritDemo {
+public class MainClass {
 
 	public static void main(String[] args) {
 

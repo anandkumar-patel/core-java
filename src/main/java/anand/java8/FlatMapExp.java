@@ -1,6 +1,7 @@
 package anand.java8;
 
 import java.util.Arrays;
+import java.util.Collection;
 import java.util.List;
 import java.util.stream.Collectors;
 import java.util.stream.Stream;
@@ -25,7 +26,11 @@ public class FlatMapExp {
 		System.out.println("Flattened List{ lower }: " + lower2);
 		
 		
-		Stream<Stream<String>> s = nestedList.stream().map(list -> list.stream());
-		s.forEach(ls-> ls.forEach(System.out::println));
+		Stream<Stream<String>> streamOfStream = nestedList.stream().map(Collection::stream);
+
+
+		List<Employee> employees = EmployeeHelper.getAllEmployees();
+		List<Project> projects = employees.stream().flatMap(e-> e.getProjects().stream()).toList();
+		System.out.println("Projects: " + projects);
 	}
 }

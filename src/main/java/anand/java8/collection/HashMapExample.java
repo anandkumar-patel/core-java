@@ -18,10 +18,10 @@ public class HashMapExample {
         map.entrySet().forEach(ele->System.out.print(ele.getKey() +" : "+ele.getValue()+", "));
        
         System.out.println("\nkeyset :");
-        map.keySet().forEach(System.out::print);
+        map.keySet().forEach(e->{System.out.print(e+" ");});
         
         System.out.println("\nvalues :");
-        map.values().forEach(System.out::print);
+        map.values().forEach(e->{System.out.print(e+" ");});
 
         // sort
         System.out.println("\nsorted :");

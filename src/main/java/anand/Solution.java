@@ -1,17 +1,18 @@
 package anand;
 
+import java.util.ArrayList;
 import java.util.Arrays;
+import java.util.List;
 import java.util.stream.IntStream;
 import java.util.stream.Stream;
 
 public class Solution {
 	public static void main(String[] args) {
-		int[][] nums = {{23, 13, 12, 14}, {2, 3, 4, 5}};
+		String[] strings = {"anand", "kumar", "patel"};
+		Object[] objects = strings;
 
-		Stream<int[]> stream1 = Arrays.stream(nums);
-
-		Stream<IntStream> st2 = stream1.map(arr->Arrays.stream(arr));
-
+		objects[1] = 1123;
+		System.out.println(objects[0]);
 
 	}
 }

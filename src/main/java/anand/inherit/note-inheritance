@@ -1,4 +1,15 @@
-** If superclass does not have default constructor/zero param constructor, 
+**  If superclass does not have default constructor/zero param constructor,
 	then subclass also needs to have an explicit constructor defined. 
-	Else it will throw compile time exception. In the subclass constructor, 
-	call to superclass constructor is mandatory.
+	Else it will throw compile time exception.
+
+**	In the subclass constructor, call to superclass constructor is mandatory.
+
+**  Execution order :
+ 	static block of parent-> static block of child --> instance block of parent
+ 	--> constructor of parent --> instance block of child --> constructor of child
+
+**  Instance blocks(stance initializer block) are particularly useful when you
+	want to perform some initialization that is common to all constructors of a class.
+	Instead of duplicating the initialization code in each constructor.
+
+**
