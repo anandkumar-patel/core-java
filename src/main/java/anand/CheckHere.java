@@ -10,7 +10,13 @@ import anand.java8.Project;
 
 public class CheckHere {
 	public static void main(String[] args) {
-		List<Employee> employees = EmployeeHelper.getAllEmployees();
-		employees.stream().filter(e-> e.getId()>105).toList().forEach(System.out::println);
+		int value = 7;
+		value = calculate(value);
+	}
+
+	private static int calculate(int data) {
+		int tempValue = data+3;
+		int newValue = tempValue * 2;
+		return  newValue;
 	}
 }

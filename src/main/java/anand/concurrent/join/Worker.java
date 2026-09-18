@@ -7,7 +7,7 @@ public class Worker implements Runnable{
 	}
 	@Override
 	public void run() {
-		for(int i =0;i<100;i++) {
+		for(int i =0;i<10;i++) {
 			try {
 				System.out.println("In the worker thread run method..."+i);
 				Thread.sleep(1000);

@@ -1,0 +1,15 @@
+The Problem is payment service taking 3  seconds so The main thread must wait for it.
+
+solution-1:
+create a separate thread for payment service
+NOTE- problem with this solution is payment service is not synced with main thread.
+
+So if Inventory service need the result of payment service result.
+this issue can be solved in solution-2
+
+solution-2:
+here Future comes in picture.
+
+- again here main thread need to wait.
+
+

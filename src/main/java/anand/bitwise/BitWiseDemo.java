@@ -4,7 +4,7 @@ public class BitWiseDemo {
 
 	public static void main(String[] args) {
 		Integer value1= new Integer(101);
-		Integer value2= new Integer(10);
+		Integer value2= new Integer(111);
 		System.out.println(value1 & value2);
 		
 		String demo1="demo";
@@ -12,7 +12,7 @@ public class BitWiseDemo {
 		//System.out.println(demo1 & demo2);
 
 		int value3=3;
-		int value4=4;
+		int value4=5;
 		System.out.println(value3 & value4);
 	}
 
